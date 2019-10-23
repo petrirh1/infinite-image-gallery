@@ -1,7 +1,6 @@
 const express = require('express');
 const Unsplash = require('unsplash-js').default;
 const toJson = require('unsplash-js').toJson;
-const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 global.fetch = require('node-fetch');
