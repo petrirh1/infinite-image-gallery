@@ -21,8 +21,9 @@ const Images = () => {
       .then(res => {
         setImages([...images, ...res.data]);
         setIsLoading(false);
+        console.log(images);
       })
-      .catch(err => console.error('fetchImages: ', err)); // for now..
+      .catch(err => console.error(err)); // for now..
   };
 
   return (
