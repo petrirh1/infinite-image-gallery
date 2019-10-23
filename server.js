@@ -2,6 +2,7 @@ const express = require('express');
 const Unsplash = require('unsplash-js').default;
 const toJson = require('unsplash-js').toJson;
 const app = express();
+const PORT = process.env.PORT || 5000;
 global.fetch = require('node-fetch');
 require('dotenv').config();
 
@@ -34,7 +35,5 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
-
-const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
