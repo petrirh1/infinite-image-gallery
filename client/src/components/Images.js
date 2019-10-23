@@ -22,7 +22,7 @@ const Images = () => {
         setImages([...images, ...res.data]);
         setIsLoading(false);
       })
-      .catch(err => console.log(err)); // for now..
+      .catch(err => console.error('fetchImages: ', err)); // for now..
   };
 
   return (
