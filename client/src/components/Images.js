@@ -6,7 +6,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Images = () => {
   const [images, setImages] = useState([]);
-  const [count, setCount] = useState(30);
+  const [count, setCount] = useState(35);
   const [start, setStart] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -16,6 +16,7 @@ const Images = () => {
 
   const fetchImages = () => {
     setStart(start + count);
+
     axios
       .get(`/api/photos?count=${count}&start=${start}`)
       .then(res => {
