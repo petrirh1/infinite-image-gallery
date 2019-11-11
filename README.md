@@ -4,5 +4,5 @@
 
 Use this command to run react and node concurrently
 
-### `Preview`
+### Preview
 You can see the app in action [here](https://infinite-gallery.herokuapp.com/).
