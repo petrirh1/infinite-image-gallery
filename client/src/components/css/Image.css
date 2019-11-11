@@ -32,6 +32,9 @@
 }
 
 .username {
+  max-width: 65%;
+  text-align: left;
+  word-wrap: break-word;
   padding: 0;
   margin-left: 5px;
   opacity: 0;
@@ -68,6 +71,15 @@
 
 .material-icons:hover {
   background: rgba(255, 255, 255, 0.25);
+}
+
+.username a {
+  color: white;
+  text-decoration: none;
+}
+
+.username a:hover {
+  text-decoration: underline;
 }
 
 /* mobile devices */

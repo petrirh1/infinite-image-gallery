@@ -10,7 +10,9 @@ const Image = ({ image }) => {
       <div className='details-container'>
         <div className='details'>
           <img className='profile-image' src={image.user.profile_image.medium} />
-          <p className='username'>{image.user.name}</p>
+          <p className='username'>
+            <a href={image.user.links.html}>{image.user.name}</a> on <a href='https://unsplash.com/'>Unsplash</a>
+          </p>
           <a href={image.links.html} target='_blank'>
             <i className='material-icons'>link</i>
           </a>
