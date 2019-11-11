@@ -6,9 +6,9 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Images = () => {
   const [images, setImages] = useState([]);
-  const [count, setCount] = useState(35);
   const [start, setStart] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
+  const count = 35;
 
   useEffect(() => {
     fetchImages();
@@ -28,7 +28,11 @@ const Images = () => {
   };
 
   return (
-    <InfiniteScroll dataLength={images.length} next={fetchImages} hasMore={true} endMessage={<h5>no more images..</h5>}>
+    <InfiniteScroll
+      dataLength={images.length}
+      next={fetchImages}
+      hasMore={true}
+      endMessage={<h5>You've reached the end of internet.</h5>}>
       {isLoading ? (
         <Spinner />
       ) : (

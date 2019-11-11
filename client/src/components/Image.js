@@ -1,15 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './css/Image.css';
 
 const Image = ({ image }) => {
-  const [details, setDetails] = useState({ name: '', link: '' });
+  console.log(image);
 
   return (
-    <img
-      src={image.urls.regular}
-      onMouseOver={() => setDetails({ name: image.user.name, link: image.links.html })}
-      onClick={() => console.log(details)}
-      alt=''
-    />
+    <div className='img-container'>
+      <img className='image' src={image.urls.regular} alt='' />
+      <div className='details-container'>
+        <div className='details'>
+          <img className='profile-image' src={image.user.profile_image.medium} />
+          <p className='username'>{image.user.name}</p>
+          <a href={image.links.html} target='_blank'>
+            <i className='material-icons'>link</i>
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 
