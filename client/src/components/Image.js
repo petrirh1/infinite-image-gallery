@@ -13,8 +13,8 @@ const Image = ({ image }) => {
           <p className='username'>
             <a href={image.user.links.html} target='_blank'>
               {image.user.name}
-            </a>{' '}
-            on{' '}
+            </a>
+            on
             <a href='https://unsplash.com/' target='_blank'>
               Unsplash
             </a>
