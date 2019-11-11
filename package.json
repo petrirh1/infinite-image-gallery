@@ -1,7 +1,7 @@
 {
-  "name": "unsplash-infinite-scroll-react",
+  "name": "infinite-gallery",
   "version": "1.0.0",
-  "description": "Unsplash infinite scroll gallery",
+  "description": "Infinite scroll gallery",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

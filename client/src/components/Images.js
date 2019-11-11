@@ -6,7 +6,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Images = () => {
   const [images, setImages] = useState([]);
-  const [start, setStart] = useState(1);
+  const [start, setStart] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const count = 35;
 
