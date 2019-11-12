@@ -8,7 +8,8 @@ const Images = () => {
   const [images, setImages] = useState([]);
   const [start, setStart] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const count = 35;
+  const [hasMore, setHasMore] = useState(true);
+  const count = 15;
 
   useEffect(() => {
     fetchImages();
@@ -23,17 +24,20 @@ const Images = () => {
       .then(res => {
         setImages([...images, ...res.data]);
         setIsLoading(false);
-        console.log(images);
       })
-      .catch(err => console.error(err)); // for now..
+      .catch(err => {
+        console.error(err);
+        setHasMore(false);
+      });
   };
 
   return (
     <InfiniteScroll
       dataLength={images.length}
       next={fetchImages}
-      hasMore={true}
-      endMessage={<h5>You've reached the end of internet.</h5>}>
+      hasMore={hasMore}
+      endMessage={<h5>You've reached the end of internet.</h5>}
+      scrollThreshold={0.65}>
       {isLoading ? (
         <Spinner />
       ) : (
