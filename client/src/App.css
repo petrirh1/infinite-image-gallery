@@ -44,17 +44,10 @@ h5 {
   }
 
   .container {
-    grid-template-columns: repeat(auto-fill, 100%);
     grid-gap: 0;
   }
 
   .img-container:nth-child(5n + 1) {
     grid-column: auto;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  .img-container:nth-child(5n + 1) {
-    grid-column: auto / span 2;
   }
 }

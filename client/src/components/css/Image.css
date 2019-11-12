@@ -4,7 +4,7 @@
   position: relative;
   height: 500px;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .profile-image {
-  height: 32px;
+  height: 2rem;
   border-radius: 50%;
   margin: 10px 15px 10px 10px;
 }
@@ -63,7 +63,7 @@
   border-radius: 50%;
   padding: 10px;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: all 0.35s ease;
   cursor: pointer;
 }
@@ -88,7 +88,7 @@
 }
 
 /* mobile devices */
-@media only screen and (max-width: 720px), (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
   .details-container {
     opacity: 1;
     background: rgba(0, 0, 0, 0);
@@ -106,7 +106,6 @@
 
   .details {
     backdrop-filter: blur(2px) brightness(90%);
-    /* filter: blur(12px); */
   }
 
   .username {
