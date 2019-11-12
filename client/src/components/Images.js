@@ -12,6 +12,7 @@ const Images = () => {
 
   useEffect(() => {
     fetchImages();
+    // eslint-disable-next-line
   }, []);
 
   const fetchImages = () => {

@@ -52,3 +52,9 @@ h5 {
     grid-column: auto;
   }
 }
+
+@media screen and (orientation: landscape) {
+  .img-container:nth-child(5n + 1) {
+    grid-column: auto / span 2;
+  }
+}
