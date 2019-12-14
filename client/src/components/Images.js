@@ -36,7 +36,7 @@ const Images = () => {
       dataLength={images.length}
       next={fetchImages}
       hasMore={hasMore}
-      endMessage={<h5>You've reached the end of internet.</h5>}
+      endMessage={<h5>You've just reached the end of the internet.</h5>}
       scrollThreshold={0.65}>
       {isLoading ? (
         <Spinner />

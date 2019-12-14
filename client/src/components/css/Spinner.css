@@ -15,12 +15,12 @@
 }
 
 .circle:nth-child(1) {
-  background: #cccccc;
+  background: #1A1A1A;
   animation: anim-reverse 1.5s infinite;
 }
 
 .circle:nth-child(2) {
-  border: 2px solid #cccccc;
+  border: 2px solid #1A1A1A;
   background: white;
   animation: anim 1.5s infinite;
 }
