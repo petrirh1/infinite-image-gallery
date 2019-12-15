@@ -1,12 +1,15 @@
 import React from 'react';
 import './css/Header.css';
+import Headroom from 'react-headroom';
 
 const Header = () => {
   return (
-    <header className='header'>
-      <img className='app-logo fade-in ' src='./app-logo.svg' alt='' />
-      <h3 className='header-title fade-in '>Infinite Gallery</h3>
-    </header>
+    <Headroom>
+      <div className='header fade-in'>
+        <img className='app-logo' src='./app-logo.svg' alt='' />
+        <h3 className='header-title'>Infinite Gallery</h3>
+      </div>
+    </Headroom>
   );
 };
 

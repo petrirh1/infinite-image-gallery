@@ -19,13 +19,6 @@ const Image = ({ image }) => {
               rel='noopener noreferrer'>
               {image.user.name}
             </a>
-            <span>on</span>
-            <a
-              href='https://unsplash.com/'
-              target='_blank'
-              rel='noopener noreferrer'>
-              Unsplash
-            </a>
           </p>
           <a href={image.links.html} target='_blank' rel='noopener noreferrer'>
             <i className='material-icons'>link</i>

@@ -6,6 +6,7 @@
   overflow: hidden;
   font-size: 0.875rem;
   font-weight: 400;
+  
 }
 
 .details-container {
@@ -93,7 +94,8 @@
   (min-width: 1024px) and (max-height: 1366px) and (hover: none) {
   .details-container {
     opacity: 1;
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0) 50%);
   }
 
   .profile-image {
@@ -104,19 +106,6 @@
 
   .material-icons {
     right: 10px;
-  }
-
-  @supports (backdrop-filter: blur()) {
-    .details {
-      backdrop-filter: blur(3px) brightness(90%);
-      background: rgba(0, 0, 0, 0.3);
-    }
-  }
-
-  @supports not (backdrop-filter: blur()) {
-    .details {
-      background: rgba(0, 0, 0, 0.3);
-    }
   }
 
   .username {

@@ -9,7 +9,7 @@ const Images = () => {
   const [start, setStart] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [hasMore, setHasMore] = useState(true);
-  const count = 15;
+  const count = 25;
 
   useEffect(() => {
     fetchImages();
@@ -37,7 +37,7 @@ const Images = () => {
       next={fetchImages}
       hasMore={hasMore}
       endMessage={<h5>You've just reached the end of the internet.</h5>}
-      scrollThreshold={0.65}>
+      scrollThreshold={0.85}>
       {isLoading ? (
         <Spinner />
       ) : (
