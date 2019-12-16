@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap');
 
 body {
-  background-color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -11,7 +10,7 @@ body {
   text-align: center; 
   margin: 0;
   font-family: 'Roboto Mono', monospace;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   overflow-y: scroll;
 }
 
@@ -25,7 +24,6 @@ h5 {
 }
 
 .container {
-  /* padding: 0 10px 10px 10px; */
   max-width: 1600px;
   margin: auto;
   display: -ms-grid;
@@ -44,7 +42,7 @@ h5 {
   height: 100%;
   max-height: 500px;
   object-fit: cover;
-  background: rgb(233, 233, 233);
+  background: rgb(27, 27, 27);
 }
 
 /* mobile devices */
@@ -73,5 +71,17 @@ h5 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: minmax(350px, auto);
     grid-gap: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(0, 0, 0);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: rgb(255, 255, 255);
   }
 }

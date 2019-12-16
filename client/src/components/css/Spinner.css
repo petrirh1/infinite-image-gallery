@@ -17,13 +17,13 @@
 }
 
 .circle:nth-child(1) {
-  background: #1A1A1A;
+  background: rgb(255, 255, 255);
   animation: anim-reverse 1.5s infinite;
 }
 
 .circle:nth-child(2) {
-  border: 2px solid #1A1A1A;
-  background: white;
+  border: 2px solid rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   animation: anim 1.5s infinite;
 }
 
@@ -37,10 +37,10 @@
     transform: rotate(0) translateX(0);
   }
   50% {
-    transform: rotate(0) translateX(-12px);
+    transform: rotate(0) translateX(-11px);
   }
   100% {
-    transform: rotate(0) translateX(0px);
+    transform: rotate(0) translateX(-1px);
     z-index: -1;
   }
 }

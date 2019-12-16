@@ -1,14 +1,25 @@
 import React from 'react';
-import './css/Header.css';
 import Headroom from 'react-headroom';
+import { useMediaPredicate } from 'react-media-hook';
+import Logo from './Logo';
+import './css/Header.css';
 
 const Header = () => {
+  const preferredTheme = useMediaPredicate('(prefers-color-scheme: dark)')
+    ? 'dark'
+    : 'light';
+
   return (
     <Headroom>
-      <div className='header fade-in'>
-        <img className='app-logo' src='./app-logo.svg' alt='' />
+      <header>
+        <Logo
+          className='app-logo'
+          width={20}
+          height={20}
+          fill={preferredTheme === 'dark' ? '#FFF' : '#212121'}
+        />
         <h3 className='header-title'>Infinite Gallery</h3>
-      </div>
+      </header>
     </Headroom>
   );
 };
