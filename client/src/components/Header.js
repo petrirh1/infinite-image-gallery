@@ -10,7 +10,7 @@ const Header = () => {
     : 'light';
 
   return (
-    <Headroom>
+    <Headroom disableInlineStyles={true} downTolerance={5} upTolerance={5}>
       <header>
         <Logo
           className='app-logo'

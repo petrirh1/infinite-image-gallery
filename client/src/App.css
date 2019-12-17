@@ -47,17 +47,8 @@ h5 {
 
 /* mobile devices */
 @media only screen and (max-width: 720px), (max-width: 1024px) {
-  body {
-    margin: 0;
-  }
-
   .App {
     width: 100vw;
-  }
-
-  .container {
-    grid-gap: 0;
-    padding: 0px;
   }
 
   .img-container:nth-child(5n + 1) {
@@ -70,7 +61,6 @@ h5 {
   .container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: minmax(350px, auto);
-    grid-gap: 0;
   }
 }
 
