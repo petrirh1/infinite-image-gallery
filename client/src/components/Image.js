@@ -7,16 +7,9 @@ const Image = ({ image }) => {
       <img className='image' src={image.urls.regular} alt='' />
       <div className='details-container'>
         <div className='details'>
-          <img
-            className='profile-image'
-            src={image.user.profile_image.medium}
-            alt=''
-          />
+          <img className='profile-image' src={image.user.profile_image.medium} alt='' />
           <p className='username'>
-            <a
-              href={image.user.links.html}
-              target='_blank'
-              rel='noopener noreferrer'>
+            <a href={image.user.links.html} target='_blank' rel='noopener noreferrer'>
               {image.user.name}
             </a>
           </p>

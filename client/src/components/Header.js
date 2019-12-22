@@ -18,7 +18,7 @@ const Header = () => {
           height={20}
           fill={preferredTheme === 'dark' ? '#FFF' : '#212121'}
         />
-        <h3 className='header-title'>Infinite Gallery</h3>
+        <h3 className='header-title'>infinite Gallery</h3>
       </header>
     </Headroom>
   );
