@@ -2,8 +2,6 @@ import React from 'react';
 import './css/Image.css';
 
 const Image = ({ image }) => {
-  console.log(image);
-
   return (
     <div className='img-container'>
       <img
