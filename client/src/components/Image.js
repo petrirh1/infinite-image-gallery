@@ -2,9 +2,15 @@ import React from 'react';
 import './css/Image.css';
 
 const Image = ({ image }) => {
+  console.log(image);
+
   return (
     <div className='img-container'>
-      <img className='image' src={image.urls.regular} alt='' />
+      <img
+        className='image'
+        src={image.urls.regular + '&w=830&h=500&auto=format&auto=compress'}
+        alt=''
+      />
       <div className='details-container'>
         <div className='details'>
           <img className='profile-image' src={image.user.profile_image.medium} alt='' />
