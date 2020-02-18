@@ -5,7 +5,9 @@ import Logo from './Logo';
 import './css/Header.css';
 
 const Header = () => {
-	const preferredTheme = useMediaPredicate('(prefers-color-scheme: dark)') ? 'dark' : 'light';
+	const preferredTheme = useMediaPredicate('(prefers-color-scheme: dark)')
+		? 'dark'
+		: 'light';
 
 	return (
 		<Headroom disableInlineStyles={true} downTolerance={5} upTolerance={5}>
